@@ -1,11 +1,20 @@
-import React from 'react'
+const Dashboard = ({ setIsAuthenticated }) => {
 
-function Dashboard() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default Dashboard
+    const handleLogout = () => {
+      setIsAuthenticated(false);
+    };
+  
+    return (
+      <div>
+        <h2>Dashboard</h2>
+        <h3>Welcome </h3>
+  
+        <button onClick={handleLogout}>
+          Logout
+        </button>
+      </div>
+    );
+  };
+  
+  export default Dashboard;
+  
